@@ -23,7 +23,7 @@ export const Contact: React.FC = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [copiedEmail, setCopiedEmail] = useState(false);
 
-  const emailAddress = 'sugumar.k.dev@gmail.com';
+  const emailAddress = 'sugumark1206@gmail.com';
 
   const validate = () => {
     const errs: Record<string, string> = {};
