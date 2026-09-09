@@ -132,7 +132,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume }) => {
             </a>
 
             <a
-              href="https://linkedin.com/in/sugumark"
+              href="https://www.linkedin.com/in/sugumar-k-33854a290"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-slate-300 hover:text-cyan-400 bg-slate-900/60 hover:bg-slate-800 border border-slate-800 rounded-xl transition-all hover:scale-105"
