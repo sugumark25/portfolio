@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Download, FileText, ExternalLink, CheckCircle2, Award, Briefcase, GraduationCap } from 'lucide-react';
+import { X, Download, FileText, CheckCircle2, Award, Briefcase, GraduationCap } from 'lucide-react';
+import resumePdf from '../assets/SugumarK_Resume (2).pdf';
 
 interface ResumeModalProps {
   isOpen: boolean;
@@ -114,28 +115,16 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
               >
                 Close Preview
               </button>
-              
-              <a
-                href="https://github.com/sugumark25"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-slate-800 border border-slate-700 hover:border-slate-600 text-white flex items-center justify-center space-x-2 transition-colors text-sm font-medium"
-              >
-                <ExternalLink className="w-4 h-4 text-cyan-400" />
-                <span>GitHub Resume Specs</span>
-              </a>
 
               <a
-                href="#contact"
-                onClick={() => {
-                  onClose();
-                  const el = document.getElementById('contact');
-                  if (el) el.scrollIntoView({ behavior: 'smooth' });
-                }}
+                href={resumePdf}
+                target="_blank"
+                rel="noopener noreferrer"
+                download="SugumarK_Resume.pdf"
                 className="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-semibold text-sm shadow-lg shadow-cyan-500/20 transition-all flex items-center justify-center space-x-2"
               >
                 <Download className="w-4 h-4" />
-                <span>Request Detailed PDF Resume</span>
+                <span>Download Resume PDF</span>
               </a>
             </div>
           </motion.div>
