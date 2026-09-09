@@ -132,6 +132,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume }) => {
             </a>
 
             <a
+              
               href="https://www.linkedin.com/in/sugumar-k-33854a290"
               target="_blank"
               rel="noopener noreferrer"
